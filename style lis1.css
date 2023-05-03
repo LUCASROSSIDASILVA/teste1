@@ -1,0 +1,117 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+
+
+/*menu do topo*/
+div.center {
+    background-color: rgb(37, 37, 39);
+}
+
+nav {
+    margin: 0 auto;
+    max-width: 1000px;
+    background-color: rgb(37, 37, 39);
+}
+
+nav a {
+    padding: 20px;
+    color: #fff;
+    display: inline-block;
+}
+
+nav a:hover {
+    background-color: rgb(24, 139, 233);
+}
+
+nav a.login {
+    background-color: rgb(24, 139, 233);
+    float: right;
+}
+
+@media (max-width: 504px) {
+    nav a {
+        display: block;
+    }
+
+    .login {
+        display: block;
+        width: 100%;
+    }
+}
+
+/*Fim do Menu topo*/
+
+/*Início do Body*/
+body{
+    background-image: url(life_is_strange_1/imagens/lis1_background.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+/*Final do body*/
+
+
+/*Menu Início*/
+
+:root{
+    --cor-fundo: rgb(34, 41, 37);
+    --cor-hover: rgb(124, 177, 238);
+    --cor-primaria: rgb(231, 241, 236);
+}
+
+.menu2 ul{
+    list-style-type: none;
+    padding: 0;
+    display: flex;
+    justify-content: space-evenly;
+}
+
+.menu2 ul{
+    background-color: var(--cor-fundo);
+}
+
+.menu2 ul li{
+    display: inline;
+    position: relative;
+}
+
+.menu2 ul li a{
+    color: var(--cor-primaria);
+    text-decoration: none;
+    display: inline-block;
+    transition: background .6s;
+    padding: 27px;
+    
+}
+
+.menu2 ul li a:hover{
+    background-color: var(--cor-hover);
+}
+
+/*Sub menu do menu*/
+
+.menu2 ul ul{
+    display: none;
+    position: absolute;
+    
+}
+
+.menu2 ul li:hover ul{
+    display: block;
+}
+
+.menu2 ul ul{
+    width: 100%;
+    justify-content: center;
+}
+
+
+
+.menu2 ul ul li a{
+    display: block;
+}
+
+/*Fim do menu*/
